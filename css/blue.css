@@ -1,0 +1,159 @@
+.blue-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--aqua);
+  padding-bottom: 40px;
+}
+
+.blue-section h1 {
+  display: none;
+  position: relative;
+  top: 10pxpx;
+  color: var(--sun);
+  font-size: 44px;
+  padding: 50px;
+  font-style: bold;
+}
+
+.blue-section .long-text {
+  padding: 20px;
+  max-width: 920px;
+  color: var(--white);
+  text-align: justify;
+}
+
+.dropdown-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px, 20px;
+}
+
+.collapsible {
+  padding: 20px;
+  margin-top: 30px;
+  width: 302px;
+}
+
+.collapsible label {
+  position: relative;
+  font-weight: 600;
+  background: var(--white);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 100px;
+  border-radius: 8px 8px 0 0;
+  z-index: 1;
+}
+
+.collapsible label::after {
+  content: "";
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  width: 50px;
+  height: 30px;
+}
+
+.collapsible label img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35px;
+  width: 120px;
+}
+
+.collapsible .inter-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  padding: 5px;
+  z-index: 1;
+  font-weight: 600;
+  box-shadow: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+.collapsible #inter-container-1 {
+  background: var(--wine);
+}
+
+.collapsible #inter-container-2 {
+  background: var(--wine);
+}
+
+.collapsible #inter-container-3 {
+  background: var(--wine);
+}
+
+.collapsible .arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 30px;
+  height: 54px;
+  width: 54px;
+  position: absolute;
+}
+
+.collapsible-content {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 8px;
+  line-height: 1.4;
+  position: relative;
+  top: -1%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.collapsible-content-opened {
+  transition: 0.3s;
+  max-height: 200px;
+  padding: 25px 25px 40px;
+  background: var(--sun);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 8px 8px;
+  opacity: 1;
+  top: 0;
+}
+
+.collapsible-content-opened p {
+  font-size: 10px;
+  color: var(--wine);
+  line-height: 21px;
+}
+
+.blue-section #icon-brown {
+  position: absolute;
+  max-width: 100px;
+  bottom: -6px;
+  transform: scaleX(1);
+  right: -50px;
+}
+
+@media (min-width: 850px) {
+  .blue-section .long-text {
+    padding-inline: 0;
+  }
+  .blue-section h1 {
+    display: block;
+    position: relative;
+  }
+
+  .blue-section .dropdown-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px, 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+}

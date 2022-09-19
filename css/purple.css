@@ -1,0 +1,97 @@
+.purple-page {
+  position: relative;
+  background: var(--wine);
+  color: var(--white);
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.purple-page h1 {
+  position: absolute;
+  top: 193px;
+  color: var(--sun);
+  line-height: 60px;
+  font-size: 32px;
+  font-style: bold;
+}
+
+.purple-page .texts {
+  max-width: 462px;
+}
+
+.purple-page .border-container {
+  border: 3px solid var(--white);
+  border-radius: 10px;
+  padding: 180px 40px 40px;
+  margin: 100px 18px 40px;
+  background-color: var(--secondary);
+}
+
+.purple-page .bag-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  width: 168px;
+  height: 141px;
+}
+
+.purple-page ul {
+  list-style: none;
+  margin-top: 1%;
+}
+
+.purple-page ul li:before {
+  content: "■ ";
+  margin: 0 2px;
+  color: var(--sun);
+}
+
+.purple-page #icon-blue {
+  position: absolute;
+  max-width: 100px;
+  bottom: -6px;
+  transform: scaleX(-1);
+  left: -50px;
+}
+@media (mix-width: 850px) {
+  .purple-page .texts {
+    padding-inline: 100px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .purple-page .border-container {
+    position: relative;
+    max-width: 830px;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 150px 18px 40px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .purple-page .bag-icon {
+    transform: translateX(-50%);
+    position: relative;
+    left: 65px;
+    top: 0;
+  }
+ 
+  .purple-page h1 {
+    position: absolute;
+    top: 50px;
+    color: var(--sun);
+    line-height: 60px;
+    font-size: 44px;
+    font-style: bold;
+  }
+}

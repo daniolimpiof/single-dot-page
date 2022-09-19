@@ -1,0 +1,106 @@
+.white-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-section p {
+  padding: 20px;
+  max-width: 920px;
+  color: var(--black);
+  text-align: justify;
+  margin-top: 45px;
+}
+
+.white-section .all-interactive {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.white-section .interactive-circle {
+  position: relative;
+  width: 320px;
+  height: 327px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.white-section .circle-center {
+  position: absolute;
+  border: solid 1px var(--wine);
+  display: flex;
+  align-items: center;
+  top: 52%;
+  transform: translateY(-50%);
+  background: var(--sun);
+  border-radius: 100%;
+  width: 178px;
+  height: 178px;
+}
+
+.white-section .circle-center p {
+  color: var(--black);
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 0;
+}
+
+.white-section .circle-center strong {
+  color: var(--black);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.white-section button {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border: 0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.all-interactive button img {
+  width: 11px;
+  height: 11px;
+}
+
+.white-section #minus {
+  background: var(--wine);
+}
+
+.white-section #plus {
+  background: var(--aqua);
+}
+
+.white-section .icon-yellow-signal {
+  top: 50px;
+}
+
+.white-section .icon-red-signal {
+  margin-left: -114px;
+  margin-top: 201px;
+}
+
+.white-section .icon-grey-signal {
+  margin-left: 114px;
+  margin-top: 201px;
+}
+
+@media (min-width: 850px) {
+.white-section p {
+
+}
+}
